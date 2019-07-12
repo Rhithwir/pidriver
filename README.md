@@ -6,9 +6,9 @@ Example usage:
 ```go
 pi := pidriver.Connect()
 
-pi.Command(pwm, phase, board, 0, 0, sel, 1)
+pi.Command(pwm, phase, board, 0, 0, sel, 1) // Write
 
-data := pi.Command(0, 0, board, anadr, quad, 0, 0)
+data := pi.Command(0, 0, board, anadr, quad, 0, 0) // Read
 fmt.Println(data)
 ```
 
