@@ -47,6 +47,7 @@ import (
 // }
 
 //Rpi raspberry pi
+//Yes I know I can just do "type Rpi []rpio.Pin" but then I can't add stuff later if I need to
 type Rpi struct {
 	Pins []rpio.Pin
 }
